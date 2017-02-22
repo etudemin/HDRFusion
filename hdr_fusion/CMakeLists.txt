@@ -24,7 +24,7 @@ if(UNIX)
 	ENDIF()
 endif()
 
-set(CUDA_NVCC_FLAGS; -arch=sm_30) #-arch=sm_35) #-arch=sm_21) 
+set(CUDA_NVCC_FLAGS; -arch=sm_61) #-arch=sm_35) #-arch=sm_21) 
 
 find_package(Qt5OpenGL REQUIRED PATHS $ENV{QtOpenGL})
 find_package(Qt5Core REQUIRED  PATHS $ENV{QtCore})
@@ -34,8 +34,10 @@ find_package(Qt5Xml REQUIRED  PATHS $ENV{QtXml})
 #Notice that the headers only include the headers that needs to be processed by moc.
 QT5_WRAP_CPP(HEADERS_MOC ${HEADERS})
 
-set(BOOST_INCLUDEDIR "C:/csxsl/install/boost")
+set(BOOST_INCLUDEDIR "D:/libs/boost_1_63_0")
 set(Boost_NO_BOOST_CMAKE ON)
+set(Boost_USE_STATIC_LIBS ON)
+set(Boost_USE_MULTITHREADED ON)
 find_package(Boost ${QUIET_} REQUIRED COMPONENTS system filesystem serialization date_time)
 
 include_directories( $ENV{SUITESPARSE_INC} )
