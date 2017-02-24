@@ -5,11 +5,11 @@ Result_folder: "..\\live_kinect\\result\\"
 CamParamPathFileName: "..\\data\\Xtion"
 #default sensor internal parameters
 
-uResolution: 1
+uResolution: 0
 # RGB-D frame resolution 0 VGA 1 QVGA
 uPyrHeight: 3
 # level of pyramid
-uCubicGridResolution: [ 256, 256, 256 ]
+uCubicGridResolution: [ 512, 512, 512 ]
 # resolution of global volume
 fVolumeSize: 3
 # size of the global volume (meter), 
