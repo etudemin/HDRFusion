@@ -1,0 +1,124 @@
+# CMake generation dependency list for this directory.
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/3.7.2/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeSystemSpecificInitialize.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/3.7.2/CMakeCCompiler.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/3.7.2/CMakeCXXCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/Platform/Windows-MSVC.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/3.7.2/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeCommonLanguageInclude.cmake
+D:/libs/vc12/opencv320/OpenCVConfig-version.cmake
+D:/libs/vc12/opencv320/OpenCVConfig.cmake
+D:/libs/vc12/opencv320/x64/vc12/lib/OpenCVConfig.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/select_compute_arch.cmake
+D:/libs/vc12/opencv320/x64/vc12/lib/OpenCVModules.cmake
+D:/libs/vc12/opencv320/x64/vc12/lib/OpenCVModules-release.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/select_compute_arch.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/select_compute_arch.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake
+C:/Qt/5.8/msvc2015_64/lib/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake
+C:/Qt/5.8/msvc2015_64/lib/cmake/Qt5Xml/Qt5XmlConfig.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindOpenMP.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/hdr_fusion_main/CMakeLists.txt
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.7/Modules/CMakeParseArguments.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake
+C:/Qt/5.8/msvc2013_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake
+C:/Qt/5.8/msvc2015_64/lib/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake
+C:/Qt/5.8/msvc2015_64/lib/cmake/Qt5Xml/Qt5XmlConfig.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_CudaLib.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DVOICP.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DirectOrientation.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_ExposureEstimation.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_IntrinsicAnalysis.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_Normal.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_RayCasterColor.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_VolumeColor.cu.obj.depend
+C:/Program Files/CMake/share/cmake-3.7/Modules/FindCUDA/run_nvcc.cmake
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_CudaLib.cu.obj.cmake.pre-gen
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DVOICP.cu.obj.cmake.pre-gen
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DirectOrientation.cu.obj.cmake.pre-gen
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_ExposureEstimation.cu.obj.cmake.pre-gen
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_IntrinsicAnalysis.cu.obj.cmake.pre-gen
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_Normal.cu.obj.cmake.pre-gen
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_RayCasterColor.cu.obj.cmake.pre-gen
+D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_VolumeColor.cu.obj.cmake.pre-gen

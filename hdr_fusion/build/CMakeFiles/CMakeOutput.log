@@ -1,0 +1,345 @@
+The system is: Windows - 6.1.7601 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine 版本 12.0.40629.0
+[Microsoft .NET Framework，版本 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+已經開始建置於 2017/2/24 下午 03:26:26。
+節點 1 (預設目標) 上的專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CompilerIdC\CompilerIdC.vcxproj"。
+PrepareForBuild:
+  正在建立目錄 "Debug\"。
+  正在建立目錄 "Debug\CompilerIdC.tlog\"。
+InitializeBuildStatus:
+  由於指定了 "AlwaysCreate"，因此正在建立 "Debug\CompilerIdC.tlog\unsuccessfulbuild"。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  正在刪除檔案 "Debug\CompilerIdC.tlog\unsuccessfulbuild"。
+  正在變更時間戳記 "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate"。
+專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CompilerIdC\CompilerIdC.vcxproj" (預設目標) 建置完成。
+
+建置成功。
+    0 個警告
+    0 個錯誤
+
+經過時間 00:00:00.76
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/3.7.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine 版本 12.0.40629.0
+[Microsoft .NET Framework，版本 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+已經開始建置於 2017/2/24 下午 03:26:27。
+節點 1 (預設目標) 上的專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CompilerIdCXX\CompilerIdCXX.vcxproj"。
+PrepareForBuild:
+  正在建立目錄 "Debug\"。
+  正在建立目錄 "Debug\CompilerIdCXX.tlog\"。
+InitializeBuildStatus:
+  由於指定了 "AlwaysCreate"，因此正在建立 "Debug\CompilerIdCXX.tlog\unsuccessfulbuild"。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /nologo /W0 /WX- /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\cl.exe
+FinalizeBuildStatus:
+  正在刪除檔案 "Debug\CompilerIdCXX.tlog\unsuccessfulbuild"。
+  正在變更時間戳記 "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate"。
+專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (預設目標) 建置完成。
+
+建置成功。
+    0 個警告
+    0 個錯誤
+
+經過時間 00:00:00.34
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/3.7.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_36961.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 版本 12.0.40629.0
+[Microsoft .NET Framework，版本 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+已經開始建置於 2017/2/24 下午 03:26:27。
+節點 1 (預設目標) 上的專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_36961.vcxproj"。
+PrepareForBuild:
+  正在建立目錄 "cmTC_36961.dir\Debug\"。
+  正在建立目錄 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\"。
+  正在建立目錄 "cmTC_36961.dir\Debug\cmTC_36961.tlog\"。
+InitializeBuildStatus:
+  由於指定了 "AlwaysCreate"，因此正在建立 "cmTC_36961.dir\Debug\cmTC_36961.tlog\unsuccessfulbuild"。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_36961.dir\Debug\\" /Fd"cmTC_36961.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_36961.dir\Debug\\" /Fd"cmTC_36961.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  
+  testCCompiler.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_36961.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_36961.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_36961.lib" /MACHINE:X64  /machine:x64 cmTC_36961.dir\Debug\testCCompiler.obj
+  cmTC_36961.vcxproj -> D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_36961.exe
+FinalizeBuildStatus:
+  正在刪除檔案 "cmTC_36961.dir\Debug\cmTC_36961.tlog\unsuccessfulbuild"。
+  正在變更時間戳記 "cmTC_36961.dir\Debug\cmTC_36961.tlog\cmTC_36961.lastbuildstate"。
+專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_36961.vcxproj" (預設目標) 建置完成。
+
+建置成功。
+    0 個警告
+    0 個錯誤
+
+經過時間 00:00:00.66
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_ebcc5.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 版本 12.0.40629.0
+[Microsoft .NET Framework，版本 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+已經開始建置於 2017/2/24 下午 03:26:28。
+節點 1 (預設目標) 上的專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_ebcc5.vcxproj"。
+PrepareForBuild:
+  正在建立目錄 "cmTC_ebcc5.dir\Debug\"。
+  正在建立目錄 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\"。
+  正在建立目錄 "cmTC_ebcc5.dir\Debug\cmTC_ebcc5.tlog\"。
+InitializeBuildStatus:
+  由於指定了 "AlwaysCreate"，因此正在建立 "cmTC_ebcc5.dir\Debug\cmTC_ebcc5.tlog\unsuccessfulbuild"。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ebcc5.dir\Debug\\" /Fd"cmTC_ebcc5.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTC_ebcc5.dir\Debug\\" /Fd"cmTC_ebcc5.dir\Debug\vc120.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCCompilerABI.c"
+  
+  CMakeCCompilerABI.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_ebcc5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_ebcc5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_ebcc5.lib" /MACHINE:X64  /machine:x64 cmTC_ebcc5.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_ebcc5.vcxproj -> D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_ebcc5.exe
+FinalizeBuildStatus:
+  正在刪除檔案 "cmTC_ebcc5.dir\Debug\cmTC_ebcc5.tlog\unsuccessfulbuild"。
+  正在變更時間戳記 "cmTC_ebcc5.dir\Debug\cmTC_ebcc5.tlog\cmTC_ebcc5.lastbuildstate"。
+專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_ebcc5.vcxproj" (預設目標) 建置完成。
+
+建置成功。
+    0 個警告
+    0 個錯誤
+
+經過時間 00:00:00.40
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_7452f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 版本 12.0.40629.0
+[Microsoft .NET Framework，版本 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+已經開始建置於 2017/2/24 下午 03:26:28。
+節點 1 (預設目標) 上的專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_7452f.vcxproj"。
+PrepareForBuild:
+  正在建立目錄 "cmTC_7452f.dir\Debug\"。
+  正在建立目錄 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\"。
+  正在建立目錄 "cmTC_7452f.dir\Debug\cmTC_7452f.tlog\"。
+InitializeBuildStatus:
+  由於指定了 "AlwaysCreate"，因此正在建立 "cmTC_7452f.dir\Debug\cmTC_7452f.tlog\unsuccessfulbuild"。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_7452f.dir\Debug\\" /Fd"cmTC_7452f.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_7452f.dir\Debug\\" /Fd"cmTC_7452f.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  
+  testCXXCompiler.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_7452f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_7452f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_7452f.lib" /MACHINE:X64  /machine:x64 cmTC_7452f.dir\Debug\testCXXCompiler.obj
+  cmTC_7452f.vcxproj -> D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_7452f.exe
+FinalizeBuildStatus:
+  正在刪除檔案 "cmTC_7452f.dir\Debug\cmTC_7452f.tlog\unsuccessfulbuild"。
+  正在變更時間戳記 "cmTC_7452f.dir\Debug\cmTC_7452f.tlog\cmTC_7452f.lastbuildstate"。
+專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_7452f.vcxproj" (預設目標) 建置完成。
+
+建置成功。
+    0 個警告
+    0 個錯誤
+
+經過時間 00:00:00.40
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_7a985.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 版本 12.0.40629.0
+[Microsoft .NET Framework，版本 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+已經開始建置於 2017/2/24 下午 03:26:29。
+節點 1 (預設目標) 上的專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_7a985.vcxproj"。
+PrepareForBuild:
+  正在建立目錄 "cmTC_7a985.dir\Debug\"。
+  正在建立目錄 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\"。
+  正在建立目錄 "cmTC_7a985.dir\Debug\cmTC_7a985.tlog\"。
+InitializeBuildStatus:
+  由於指定了 "AlwaysCreate"，因此正在建立 "cmTC_7a985.dir\Debug\cmTC_7a985.tlog\unsuccessfulbuild"。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_7a985.dir\Debug\\" /Fd"cmTC_7a985.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_7a985.dir\Debug\\" /Fd"cmTC_7a985.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXCompilerABI.cpp"
+  
+  CMakeCXXCompilerABI.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_7a985.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_7a985.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_7a985.lib" /MACHINE:X64  /machine:x64 cmTC_7a985.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_7a985.vcxproj -> D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_7a985.exe
+FinalizeBuildStatus:
+  正在刪除檔案 "cmTC_7a985.dir\Debug\cmTC_7a985.tlog\unsuccessfulbuild"。
+  正在變更時間戳記 "cmTC_7a985.dir\Debug\cmTC_7a985.tlog\cmTC_7a985.lastbuildstate"。
+專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_7a985.vcxproj" (預設目標) 建置完成。
+
+建置成功。
+    0 個警告
+    0 個錯誤
+
+經過時間 00:00:00.40
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/12.0/bin/MSBuild.exe" "cmTC_e3407.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=12.0"
+Microsoft (R) Build Engine 版本 12.0.40629.0
+[Microsoft .NET Framework，版本 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+已經開始建置於 2017/2/24 下午 03:26:30。
+節點 1 (預設目標) 上的專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_e3407.vcxproj"。
+PrepareForBuild:
+  正在建立目錄 "cmTC_e3407.dir\Debug\"。
+  正在建立目錄 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\"。
+  正在建立目錄 "cmTC_e3407.dir\Debug\cmTC_e3407.tlog\"。
+InitializeBuildStatus:
+  由於指定了 "AlwaysCreate"，因此正在建立 "cmTC_e3407.dir\Debug\cmTC_e3407.tlog\unsuccessfulbuild"。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_e3407.dir\Debug\\" /Fd"cmTC_e3407.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\feature_tests.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 18.00.40629 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTC_e3407.dir\Debug\\" /Fd"cmTC_e3407.dir\Debug\vc120.pdb" /Gd /TP /errorReport:queue D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\feature_tests.cxx
+  
+  feature_tests.cxx
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_e3407.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_e3407.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/CMakeTmp/Debug/cmTC_e3407.lib" /MACHINE:X64  /machine:x64 cmTC_e3407.dir\Debug\feature_tests.obj
+  cmTC_e3407.vcxproj -> D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\Debug\cmTC_e3407.exe
+FinalizeBuildStatus:
+  正在刪除檔案 "cmTC_e3407.dir\Debug\cmTC_e3407.tlog\unsuccessfulbuild"。
+  正在變更時間戳記 "cmTC_e3407.dir\Debug\cmTC_e3407.tlog\cmTC_e3407.lastbuildstate"。
+專案 "D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\CMakeTmp\cmTC_e3407.vcxproj" (預設目標) 建置完成。
+
+建置成功。
+    0 個警告
+    0 個錯誤
+
+經過時間 00:00:00.41
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

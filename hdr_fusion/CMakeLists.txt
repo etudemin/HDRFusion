@@ -34,7 +34,7 @@ find_package(Qt5Xml REQUIRED  PATHS $ENV{QtXml})
 #Notice that the headers only include the headers that needs to be processed by moc.
 QT5_WRAP_CPP(HEADERS_MOC ${HEADERS})
 
-set(BOOST_INCLUDEDIR "D:/libs/boost_1_63_0")
+set(BOOST_INCLUDEDIR "D:/libs/vc12/boost_1_58_0")
 set(Boost_NO_BOOST_CMAKE ON)
 set(Boost_USE_STATIC_LIBS ON)
 set(Boost_USE_MULTITHREADED ON)

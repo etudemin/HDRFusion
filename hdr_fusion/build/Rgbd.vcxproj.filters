@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\GLUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KeyFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KinfuTracker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\TSDF.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VideoSourceKinect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KeyFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Kinect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KinfuTracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\TSDF.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Teapot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\GLUtil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VideoSourceKinect.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cu" />
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_CudaLib.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DVOICP.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DirectOrientation.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_ExposureEstimation.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_IntrinsicAnalysis.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_Normal.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_RayCasterColor.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_VolumeColor.cu.obj">
+      <Filter>Object Files</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E07E69A6-221D-3624-9201-C29D2AF2CF20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6694353B-A505-377D-BD4C-3DA2522072CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Files">
+      <UniqueIdentifier>{D7249CED-3F52-3800-AF58-E1B56AB76806}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

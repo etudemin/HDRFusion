@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\MultiViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\DataLive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\Data4Viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\MultiViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\DataLive.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\Data4Viewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{E07E69A6-221D-3624-9201-C29D2AF2CF20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6694353B-A505-377D-BD4C-3DA2522072CB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

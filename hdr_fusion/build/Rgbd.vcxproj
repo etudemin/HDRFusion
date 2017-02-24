@@ -1,0 +1,1003 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{7935B891-F42B-3C5D-BB13-19904F108720}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Rgbd</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rgbd.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rgbdd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rgbd.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rgbd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Rgbd.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Rgbd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Rgbd.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Rgbd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_system-vc120-mt-gd-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_filesystem-vc120-mt-gd-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_date_time-vc120-mt-gd-1_63.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_xfeatures2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaimgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafeatures2d320.lib;GLU32.lib;opengl32.lib;glew32.lib;OpenNI2.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_shape320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_video320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_calib3d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_features2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudawarping320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_flann320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_ml320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_highgui320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_videoio320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgcodecs320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafilters320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaarithm320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_core320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudev320.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64/$(Configuration);C:/Program Files/OpenNI2/Lib;C:/Program Files/OpenNI2/Lib/$(Configuration);D:/libs/vc12/boost_1_58_0/build/lib;D:/libs/vc12/boost_1_58_0/build/lib/$(Configuration);D:/libs/vc12/glew-2.0.0/lib;D:/libs/vc12/glew-2.0.0/lib/$(Configuration);D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib;D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib/$(Configuration);D:/libs/vc12/libQGLViewer;D:/libs/vc12/libQGLViewer/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/Debug/Rgbdd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/Debug/Rgbdd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_system-vc120-mt-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_filesystem-vc120-mt-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_date_time-vc120-mt-1_63.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_xfeatures2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaimgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafeatures2d320.lib;GLU32.lib;opengl32.lib;glew32.lib;OpenNI2.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_shape320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_video320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_calib3d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_features2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudawarping320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_flann320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_ml320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_highgui320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_videoio320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgcodecs320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafilters320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaarithm320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_core320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudev320.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64/$(Configuration);C:/Program Files/OpenNI2/Lib;C:/Program Files/OpenNI2/Lib/$(Configuration);D:/libs/vc12/boost_1_58_0/build/lib;D:/libs/vc12/boost_1_58_0/build/lib/$(Configuration);D:/libs/vc12/glew-2.0.0/lib;D:/libs/vc12/glew-2.0.0/lib/$(Configuration);D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib;D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib/$(Configuration);D:/libs/vc12/libQGLViewer;D:/libs/vc12/libQGLViewer/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/Release/Rgbd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/Release/Rgbd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_system-vc120-mt-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_filesystem-vc120-mt-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_date_time-vc120-mt-1_63.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_xfeatures2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaimgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafeatures2d320.lib;GLU32.lib;opengl32.lib;glew32.lib;OpenNI2.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_shape320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_video320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_calib3d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_features2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudawarping320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_flann320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_ml320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_highgui320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_videoio320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgcodecs320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafilters320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaarithm320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_core320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudev320.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64/$(Configuration);C:/Program Files/OpenNI2/Lib;C:/Program Files/OpenNI2/Lib/$(Configuration);D:/libs/vc12/boost_1_58_0/build/lib;D:/libs/vc12/boost_1_58_0/build/lib/$(Configuration);D:/libs/vc12/glew-2.0.0/lib;D:/libs/vc12/glew-2.0.0/lib/$(Configuration);D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib;D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib/$(Configuration);D:/libs/vc12/libQGLViewer;D:/libs/vc12/libQGLViewer/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/MinSizeRel/Rgbd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/MinSizeRel/Rgbd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";Rgbd_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\libs\vc12\opencv320\include;D:\libs\vc12\eigen-3.3.2\include\eigen3;D:\libs\vc12\sophus-1.0.0\sophus;C:\Program Files\OpenNI2\Include;D:\libs\vc12\boost_1_58_0;D:\libs\vc12\glew-2.0.0\include;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\common;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd;D:\libs\vc12\libQGLViewer;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;D:\libs\vc12\opencv320\include\opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_system-vc120-mt-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_filesystem-vc120-mt-1_63.lib;D:\libs\boost_1_63_0\build\x64\vc12\lib\libboost_date_time-vc120-mt-1_63.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_xfeatures2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaimgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafeatures2d320.lib;GLU32.lib;opengl32.lib;glew32.lib;OpenNI2.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_shape320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_video320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_calib3d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_features2d320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudawarping320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_flann320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_ml320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_highgui320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_videoio320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgcodecs320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudafilters320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_imgproc320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudaarithm320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_core320.lib;D:\libs\vc12\opencv320\x64\vc12\lib\opencv_cudev320.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v8.0/lib/x64/$(Configuration);C:/Program Files/OpenNI2/Lib;C:/Program Files/OpenNI2/Lib/$(Configuration);D:/libs/vc12/boost_1_58_0/build/lib;D:/libs/vc12/boost_1_58_0/build/lib/$(Configuration);D:/libs/vc12/glew-2.0.0/lib;D:/libs/vc12/glew-2.0.0/lib/$(Configuration);D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib;D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/lib/$(Configuration);D:/libs/vc12/libQGLViewer;D:/libs/vc12/libQGLViewer/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/RelWithDebInfo/Rgbd.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/RelWithDebInfo/Rgbd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_CudaLib.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/CudaLib.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_CudaLib.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_CudaLib.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/CudaLib.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_CudaLib.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_CudaLib.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/CudaLib.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_CudaLib.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_CudaLib.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_CudaLib.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/CudaLib.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_CudaLib.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DVOICP.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DVOICP.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DVOICP.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DVOICP.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DVOICP.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DVOICP.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DVOICP.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DVOICP.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DVOICP.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DVOICP.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DVOICP.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DVOICP.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DVOICP.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DirectOrientation.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DirectOrientation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DirectOrientation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DirectOrientation.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DirectOrientation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DirectOrientation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DirectOrientation.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DirectOrientation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DirectOrientation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_DirectOrientation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_DirectOrientation.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/DirectOrientation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DirectOrientation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_ExposureEstimation.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/ExposureEstimation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_ExposureEstimation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_ExposureEstimation.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/ExposureEstimation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_ExposureEstimation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_ExposureEstimation.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/ExposureEstimation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_ExposureEstimation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_ExposureEstimation.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_ExposureEstimation.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/ExposureEstimation.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_ExposureEstimation.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_IntrinsicAnalysis.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/IntrinsicAnalysis.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_IntrinsicAnalysis.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_IntrinsicAnalysis.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/IntrinsicAnalysis.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_IntrinsicAnalysis.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_IntrinsicAnalysis.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/IntrinsicAnalysis.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_IntrinsicAnalysis.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_IntrinsicAnalysis.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_IntrinsicAnalysis.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/IntrinsicAnalysis.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_IntrinsicAnalysis.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_Normal.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/Normal.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_Normal.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_Normal.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/Normal.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_Normal.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_Normal.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/Normal.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_Normal.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_Normal.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_Normal.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/Normal.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_Normal.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_RayCasterColor.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/RayCasterColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_RayCasterColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_RayCasterColor.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/RayCasterColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_RayCasterColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_RayCasterColor.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/RayCasterColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_RayCasterColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_RayCasterColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_RayCasterColor.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/RayCasterColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_RayCasterColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cu">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_VolumeColor.cu.obj.Debug.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/VolumeColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.Debug.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_VolumeColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_VolumeColor.cu.obj.Release.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/VolumeColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.Release.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_VolumeColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_VolumeColor.cu.obj.MinSizeRel.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/VolumeColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.MinSizeRel.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_VolumeColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building NVCC (Device) object CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D verbose:BOOL=OFF -D "CCBIN:PATH=$(VCInstallDir)bin" -D build_configuration:STRING=$(ConfigurationName) -D generated_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj -D generated_cubin_file:STRING=D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/$(Configuration)/Rgbd_generated_VolumeColor.cu.obj.cubin.txt -P D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/CMakeFiles/Rgbd.dir/rgbd/Rgbd_generated_VolumeColor.cu.obj.RelWithDebInfo.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/rgbd/VolumeColor.cu;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.RelWithDebInfo.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cu;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_VolumeColor.cu.obj</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion -BD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build --check-stamp-file D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libs\vc12\opencv320\OpenCVConfig-version.cmake;D:\libs\vc12\opencv320\OpenCVConfig.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules-release.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion -BD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build --check-stamp-file D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libs\vc12\opencv320\OpenCVConfig-version.cmake;D:\libs\vc12\opencv320\OpenCVConfig.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules-release.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion -BD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build --check-stamp-file D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libs\vc12\opencv320\OpenCVConfig-version.cmake;D:\libs\vc12\opencv320\OpenCVConfig.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules-release.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion -BD:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build --check-stamp-file D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\libs\vc12\opencv320\OpenCVConfig-version.cmake;D:\libs\vc12\opencv320\OpenCVConfig.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules.cmake;D:\libs\vc12\opencv320\x64\vc12\lib\OpenCVModules-release.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\select_compute_arch.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QVirtualKeyboardPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenMP.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\hdr_fusion_main\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.7\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.7\Modules\CMakeParseArguments.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\5.8\msvc2013_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Qt\5.8\msvc2015_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_CudaLib.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DVOICP.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_DirectOrientation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_ExposureEstimation.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_IntrinsicAnalysis.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_Normal.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_RayCasterColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\Rgbd_generated_VolumeColor.cu.obj.depend;C:\Program Files\CMake\share\cmake-3.7\Modules\FindCUDA\run_nvcc.cmake;D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Camera.h" />
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KeyFrame.h" />
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Kinect.h" />
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KinfuTracker.h" />
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\TSDF.h" />
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Teapot.h" />
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\GLUtil.hpp" />
+    <ClInclude Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VideoSourceKinect.hpp" />
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Camera.cpp"  />
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\GLUtil.cpp"  />
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KeyFrame.cpp"  />
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\KinfuTracker.cpp"  />
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\TSDF.cpp"  />
+    <ClCompile Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VideoSourceKinect.cpp"  />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_CudaLib.cu.obj" />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DVOICP.cu.obj" />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_DirectOrientation.cu.obj" />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_ExposureEstimation.cu.obj" />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_IntrinsicAnalysis.cu.obj" />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_Normal.cu.obj" />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_RayCasterColor.cu.obj" />
+    <Object Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\build\CMakeFiles\Rgbd.dir\rgbd\$(Configuration)\Rgbd_generated_VolumeColor.cu.obj" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\CudaLib.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DVOICP.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\DirectOrientation.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\ExposureEstimation.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\IntrinsicAnalysis.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\Normal.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\RayCasterColor.cuh" />
+    <None Include="D:\myCode\Research_Qualcomn\HDRFusion\hdr_fusion\rgbd\VolumeColor.cuh" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/myCode/Research_Qualcomn/HDRFusion/hdr_fusion/build/ZERO_CHECK.vcxproj">
+      <Project>6475DDA8-8467-30F7-94B2-5192AAFEA69B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
