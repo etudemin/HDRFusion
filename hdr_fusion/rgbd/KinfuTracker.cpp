@@ -370,7 +370,7 @@ double CKinFuTracker::icp(CKeyFrame::tp_ptr pRefeFrame_, CKeyFrame::tp_ptr pLive
 	short asICPIterations[4] = { 4, 3, 3, 1 };
 	dICPEnergy = dvoICPIC(pRefeFrame_, pLiveFrame_, asICPIterations, &T_rl, &eivIter);
 	//estimate dt
-	estimateExposure(pLiveFrame_, T_rl);
+	estimateExposure(pLiveFrame_, T_rl); //(2017/2/21)[Exposure Compensation]
 
 	return dICPEnergy;
 }
@@ -385,7 +385,8 @@ void CKinFuTracker::estimateExposure(CKeyFrame::tp_ptr pCurFrame_, const SE3Grou
 	const double3& devT_lr = pcl::device::device_cast<double3> (tt);
 
 	GpuMat mask;
-	if(true){
+	
+	if(true){ //(2017/2/21)[Exposure Compensation]
 		_avg_exposure = btl::device::exposure_est2(pCurFrame_->_pRGBCamera->getIntrinsics(0), devR_lr, devT_lr,
 			_pIACurr->_vRadianceBGR[0], _pIACurr->_error_bgr[0],
 			_pIACurr->_vRadianceBGR[1], _pIACurr->_error_bgr[1], 
@@ -395,6 +396,8 @@ void CKinFuTracker::estimateExposure(CKeyFrame::tp_ptr pCurFrame_, const SE3Grou
 	}
 
 	for (int ch = 0; ch < 3; ch++) {
+	for (int ch = 0; ch < 3; ch++) { //(2017/2/21)[Exposure Compensation]
+		cout << "avg exposure: " << _avg_exposure << endl;
 		_pIACurr->_vRadianceBGR[ch].convertTo(_pIACurr->_vRadianceBGR[ch], CV_32FC1, _avg_exposure);
 	}
 
@@ -437,7 +440,7 @@ void CKinFuTracker::tracking(CKeyFrame::tp_ptr pCurFrame_)
 
 	constructLivePyr();
 
-	if (icp(_pRefFrame.get(), pCurFrame_) < _aMinEnergy[_nResolution])
+	if (icp(_pRefFrame.get(), pCurFrame_) < _aMinEnergy[_nResolution]) //(2017/2/21)[Exposure Compensation] 
 	{
 		SE3Group<double> T_cw(pCurFrame_->_R_cw, pCurFrame_->_Tw);
 		GpuMat radiance;
