@@ -48,6 +48,7 @@ namespace btl{ namespace geometry
 
 		virtual bool init(CKeyFrame::tp_ptr pKeyFrame_);
 		virtual void tracking(CKeyFrame::tp_ptr pCurFrame_);
+		string type2str(int type);
 
 		void getNextView(Eigen::Affine3d* pSystemPose_);
 		void getPrevView( Eigen::Affine3d* pSystemPose_ );

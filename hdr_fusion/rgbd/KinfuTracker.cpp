@@ -445,6 +445,9 @@ void CKinFuTracker::tracking(CKeyFrame::tp_ptr pCurFrame_)
 		SE3Group<double> T_cw(pCurFrame_->_R_cw, pCurFrame_->_Tw);
 		GpuMat radiance;
 		cuda::merge(_pIACurr->_vRadianceBGR, radiance);
+		Mat radiance_mat(radiance);
+		printf("%s", type2str(radiance_mat.type()));
+
 		GpuMat er;
 		cuda::merge(_pIACurr->_error_bgr, 3, er);
 		GpuMat normal_radiance;
@@ -460,6 +463,29 @@ void CKinFuTracker::tracking(CKeyFrame::tp_ptr pCurFrame_)
 
 	return;
 }//track
+
+string CKinFuTracker::type2str(int type) {
+	string r;
+
+	uchar depth = type & CV_MAT_DEPTH_MASK;
+	uchar chans = 1 + (type >> CV_CN_SHIFT);
+
+	switch (depth) {
+	case CV_8U:  r = "8U"; break;
+	case CV_8S:  r = "8S"; break;
+	case CV_16U: r = "16U"; break;
+	case CV_16S: r = "16S"; break;
+	case CV_32S: r = "32S"; break;
+	case CV_32F: r = "32F"; break;
+	case CV_64F: r = "64F"; break;
+	default:     r = "User"; break;
+	}
+
+	r += "C";
+	r += (chans + '0');
+
+	return r;
+}
 
 }//geometry
 }//btl
